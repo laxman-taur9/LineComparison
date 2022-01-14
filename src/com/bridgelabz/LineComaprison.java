@@ -40,7 +40,7 @@ public class LineComaprison {
 		}
 		else
 		{
-			if(l2>l2)
+			if(l1>l2)
 			{
 				return "Line 1 is Bigger than Line 2";
 			}
@@ -50,5 +50,15 @@ public class LineComaprison {
 				
 			}
 		}
+	}
+	public static void main(String[] args) {
+		//object of linecomparison class for calculating length of lines
+		
+		LineComparison LC1 = new LineComparison();
+		LineComparison LC2 = new LineComparison();
+		
+		//getting line point from user input
+		LC1.getLinePoint();
+		LC2.getLinePoint();
 	}
 }
