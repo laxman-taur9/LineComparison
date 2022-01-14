@@ -54,11 +54,22 @@ public class LineComaprison {
 	public static void main(String[] args) {
 		//object of linecomparison class for calculating length of lines
 		
-		LineComparison LC1 = new LineComparison();
-		LineComparison LC2 = new LineComparison();
+		LineComaprison LC1 = new LineComaprison();
+		LineComaprison LC2 = new LineComaprison();
 		
 		//getting line point from user input
 		LC1.getLinePoint();
 		LC2.getLinePoint();
+		
+		//getting length of lines in variables
+		double line1length = LC1.getLengthOfLine();
+		double line2length = LC2.getLengthOfLine();
+		
+		//Displaying the length of line
+		System.out.println("Length of Line1 :"+line1length);
+		System.out.println("Length of Line2 :"+line2length);
+		
+		//checking the Equality or smaller length of lines
+		System.out.println(compareTo(line1length,line2length));
 	}
 }
