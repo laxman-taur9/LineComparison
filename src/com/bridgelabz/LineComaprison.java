@@ -30,4 +30,25 @@ public class LineComaprison {
 		double lengthofLine = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
 		return lengthofLine;
 	}
+	// checking the Equality or smaller 2 length lines
+	public static String comapreTo(double l1,double l2)
+	{
+		if(l1==l2)
+		{
+			return "Line1 and Line2 are Equal .";
+			
+		}
+		else
+		{
+			if(l2>l2)
+			{
+				return "Line 1 is Bigger than Line 2";
+			}
+			else
+			{
+				return "Line 1 is smaller than line 2";
+				
+			}
+		}
+	}
 }
